@@ -1,11 +1,7 @@
-mod services;
+const SECONDS_PER_MINUTE: u32 = 60;
 
-use actix_web::{App, HttpServer};
-
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-    HttpServer::new(move || App::new().configure(services::config))
-        .bind("127.0.0.1:8080")?
-        .run()
-        .await
+fn main() {
+    let total = 30;
+    let total_em_segundos = total * SECONDS_PER_MINUTE;
+    println!("Trabalhou {} segundos", total_em_segundos);
 }

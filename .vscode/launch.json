@@ -4,15 +4,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'beginner-rust'",
+            "name": "Debug executable 'learn-rust'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=beginner-rust",
-                    "--package=beginner-rust"
+                    "--bin=learn-rust",
+                    "--package=learn-rust"
                 ],
                 "filter": {
-                    "name": "beginner-rust",
+                    "name": "learn-rust",
                     "kind": "bin"
                 }
             },
@@ -22,16 +22,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'beginner-rust'",
+            "name": "Debug unit tests in executable 'learn-rust'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=beginner-rust",
-                    "--package=beginner-rust"
+                    "--bin=learn-rust",
+                    "--package=learn-rust"
                 ],
                 "filter": {
-                    "name": "beginner-rust",
+                    "name": "learn-rust",
                     "kind": "bin"
                 }
             },
